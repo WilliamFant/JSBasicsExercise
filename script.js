@@ -29,12 +29,18 @@ console.log((("I".length + "Am".length) % "Iron".length) % "Man".length);
 
 // 4. Using Index on each of the following strings, have AVENGERS display vertically in the console/terminal (Strings: "CAP" "VISION" "OKOYE" "NICK FURY" "GROOT" "DOCTOR STRANGE" "THOR" "STAR-LORD"). (NOTE: Need to create a separate console log for each string).
 names = "CAP VISION OKOYE NICK FURY GROOT DOCTOR STRANGE THOR STAR-LORD";
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
+avengers = "AVENGERS"
+for (let u = 0; u < avengers.length;) {
+    for (let i = 0; i < names.length; i++) {
+        if(avengers[u] == names[i]){
+            console.log(names[i]);
+            u++
+        }
+    }
 }
-
 // 5. Create the following variables with the following values m=25 and c=4. Create a variable with the name of u and set the value for it by adding m and c together (NOTE: Must add actual variables NOT just 25 + 4 when setting value for the u variable).
 m = 25
 c = 4
-console.log(m+c);
+u = m + c
+console.log(u);
 // When finished, create a repository in the “JSBasicsExercise” Folder as well as on GitHub. Add and commit everything in the JSBasicsExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form.
